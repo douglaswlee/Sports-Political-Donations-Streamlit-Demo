@@ -100,10 +100,10 @@ def main():
     
     st.sidebar.title('Political Donations of U.S. Sports Owners')
     st.sidebar.markdown(
-        'Exploring the data behind FiveThirtyEight\'s [investigation]({ARTICLE_LINK}) '
+        f'Exploring the data behind FiveThirtyEight\'s [investigation]({ARTICLE_LINK}) '
         'into political donations of U.S. sports franchise owners.\r'
         'Use the dropdowns to filter the data by election year and/or league.\n\n'
-        f'''Source Data: [538 Github]({DATA_LINK})'''
+        f'Source Data: [538 Github]({DATA_LINK})'
     )
     
     elec_yr = st.sidebar.selectbox('Select Election Year', tuple(['All'] + list(np.sort(main_data['Election Year'].unique()))))
